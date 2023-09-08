@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    alert("Hello world!!")
+   // console.log("Srinath")
+   // console.warn("Warning")
+   // console.error("error")
+    let a;
+    let b="Sri"
+    let e = "Ram"
+   // console.log(typeof a)
+   // console.log(`${b} and ${e} are friends`)
+    let str = 'Computers, Technology, Science';
+   // console.warn(str.split(', '))
+    //Arrays
+    let arr =['Apple','Orrange','Mango'];
+    //console.error(arr)
+    arr.push('Grapes')
+    arr.unshift('Banana')
+    arr.pop()
+   // console.warn(arr)
+    //Object literals
+    const person = {
+      firstName :'Gollapinni',
+      lastName :'Srinath',
+      age:23,
+      IsWorking:true,
+      hobbies:['Movies','Cricket','FootBall','Batminton'],
+      address : {
+        D_no: '4-1808/1',
+        Colony:'DNC',
+        Town:'Chittoor',
+        State:'A.P',
+        Country:'India'
+      }
+    }
+    console.log(person)
+    console.warn(person.firstName,person.lastName);
+    console.warn(person.hobbies[1])
+    //Destructuring
+    const{fn,ln} = person;
+    console.log(fn,ln)
+    person.email = 'Sri@mail.com'
+    //Array of Objects
+    const toDoList = [
+      {
+        id:1,
+        task:"Exercise Daily"
+      },
+      {
+        id:2,
+        task:"Learn Daily"
+      }
+    ]
+    console.error(toDoList[0].task)
+  </script>
+</body>
+</html>
